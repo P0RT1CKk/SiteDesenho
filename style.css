@@ -1,15 +1,38 @@
 body {
-    background-color: black;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
 }
 
-#drawing-board {
-    background-color: white;
-    width: 1200px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-header, footer {
+.container {
     text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.tools {
+    margin-top: 20px;
+}
+
+button, input {
+    margin-right: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }

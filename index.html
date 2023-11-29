@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Site de Desenho</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desenhando no Site</title>
 </head>
 <body>
-    <header>
-        <h1>Site de Desenho</h1>
-    </header>
-    <main>
-        <div id="drawing-board"></div>
-        <input type="color" id="color-picker">
-        <button id="eraser">Borracha</button>
-    </main>
-    <footer>
-        <p>Site criado por Patrick</p>
-    </footer>
+    <div class="container">
+        <h1>Desenhe aqui</h1>
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+            <button id="pencil">Lápis</button>
+            <button id="eraser">Borracha</button>
+            <input type="color" id="colorPicker" value="#000000">
+        </div>
+        <div class="footer">
+            <p>Site feito por Patrick</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

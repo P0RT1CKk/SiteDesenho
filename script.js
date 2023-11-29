@@ -1,19 +1,56 @@
-let drawingBoard = document.getElementById('drawing-board');
-let colorPicker = document.getElementById('color-picker');
-let eraser = document.getElementById('eraser');
+document.addEventListener("DOMContentLoaded", function () {
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    const pencilButton = document.getElementById("pencil");
+    const eraserButton = document.getElementById("eraser");
+    const colorPicker = document.getElementById("colorPicker");
 
-drawingBoard.addEventListener('mousemove', function(e) {
-    if(e.buttons !== 1) return;
-    let div = document.createElement('div');
-    div.style.backgroundColor = eraser.clicked ? 'white' : colorPicker.value;
-    div.style.position = 'absolute';
-    div.style.left = e.pageX + 'px';
-    div.style.top = e.pageY + 'px';
-    div.style.width = '5px';
-    div.style.height = '5px';
-    document.body.appendChild(div);
-});
+    // Configurando o tamanho do canvas
+    canvas.width = 800;
+    canvas.height = 600;
 
-eraser.addEventListener('click', function() {
-    eraser.clicked = !eraser.clicked;
+    let isDrawing = false;
+    let isErasing = false;
+
+    function startDrawing(e) {
+        isDrawing = true;
+        draw(e);
+    }
+
+    function stopDrawing() {
+        isDrawing = false;
+        context.beginPath();
+    }
+
+    function draw(e) {
+        if (!isDrawing) return;
+
+        context.lineWidth = 5;
+        context.lineCap = "round";
+
+        if (isErasing) {
+            context.strokeStyle = "#fff"; // Use a cor do fundo para "apagar"
+        } else {
+            context.strokeStyle = colorPicker.value;
+        }
+
+        context.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        context.stroke();
+        context.beginPath();
+        context.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+    }
+
+    // Adicionando eventos de mouse
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("mousemove", draw);
+
+    // Adicionando eventos para as ferramentas
+    pencilButton.addEventListener("click", function () {
+        isErasing = false;
+    });
+
+    eraserButton.addEventListener("click", function () {
+        isErasing = true;
+    });
 });
