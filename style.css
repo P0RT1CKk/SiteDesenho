@@ -23,7 +23,7 @@ canvas {
     background-color: #fff;
     margin: 0 auto; 
     display: block;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adicione uma sombra ao redor do canvas */
+    box-shadow: 0 0 1000px rgba(255, 255, 255, 0.5); /* Adicione uma sombra ao redor do canvas */
 }
 
 
