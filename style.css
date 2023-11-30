@@ -72,8 +72,8 @@ button:hover {
 }
 
 .tools button {
-    width: 30px; /* Defina a largura desejada */
-    height: 30px; /* Defina a altura desejada */
+    width: 3px; /* Defina a largura desejada */
+    height: 3px; /* Defina a altura desejada */
 }
 
 .tools img {
