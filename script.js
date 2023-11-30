@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const colorPicker = document.getElementById("colorPicker");
 
     // Configurando o tamanho do canvas
-    canvas.width = 1000;
+    canvas.width = 1280;
     canvas.height = 800;
 
     let isDrawing = false;
