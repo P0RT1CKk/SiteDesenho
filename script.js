@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const canvas = document.getElementById("canvas");
     const context = canvas.getContext("2d");
+    const colorPicker = document.getElementById("colorPicker");
     const pencilButton = document.getElementById("pencil");
     const eraserButton = document.getElementById("eraser");
-    const colorPicker = document.getElementById("colorPicker");
     const clearButton = document.getElementById("clearCanvas");
 
     // Configurando o tamanho do canvas
