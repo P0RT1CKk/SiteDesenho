@@ -23,7 +23,7 @@ canvas {
     background-color: #fff;
     margin: 0 auto; 
     display: block;
-    box-shadow: 0 0 1000px rgba(1281, 801,801, 0.9); /* Adicione uma sombra ao redor do canvas */
+    box-shadow: 0 0 1000px rgba(1281, 801,801, 0.); /* Adicione uma sombra ao redor do canvas */
 }
 
 
@@ -79,28 +79,4 @@ button:hover {
 .tools img {
     width: 10%; /* Garante que a imagem preencha o botão */
     height: 10%;
-}
-
-.color-picker-container {
-    position: relative;
-    display: inline-block;
-}
-
-#colorPickerBtn {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-#colorPickerBtn img {
-    width: 24px; /* Ajuste conforme necessário */
-    height: 24px; /* Ajuste conforme necessário */
-}
-
-#colorPicker {
-    position: absolute;
-    top: 100%; /* Posiciona abaixo do botão */
-    left: 0;
-    z-index: 1; /* Garante que o seletor de cores fique sobre o canvas se necessário */
 }

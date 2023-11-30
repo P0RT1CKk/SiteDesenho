@@ -60,29 +60,5 @@ document.addEventListener("DOMContentLoaded", function () {
         // Limpa todo o conteúdo desenhado no canvas
         context.clearRect(0, 0, canvas.width, canvas.height);
     });
-
-    // Função para ajustar o tamanho da imagem no botão
-    function adjustImageSize(buttonId, width, height) {
-        const button = document.getElementById(buttonId);
-        const image = button.querySelector("img");
-        image.style.width = width + "px";
-        image.style.height = height + "px";
-    }
-
-    // Chame a função para ajustar o tamanho das imagens nos botões desejados
-    adjustImageSize("pencil", 30, 30); // Ajuste conforme necessário
-    adjustImageSize("eraser", 30, 30); // Ajuste conforme necessário
-    adjustImageSize("clearCanvas", 30, 30); // Ajuste conforme necessário
-
-    const colorPickerBtn = document.getElementById("colorPickerBtn");
-    const colorPicker = document.getElementById("colorPicker");
-
-    colorPickerBtn.addEventListener("click", function () {
-        colorPicker.click(); // Simula o clique no seletor de cores oculto
-    });
-
-    colorPicker.addEventListener("input", function () {
-        // Atualiza a cor do seu desenho com a cor selecionada
-        context.strokeStyle = colorPicker.value;
-    });
 });
+
