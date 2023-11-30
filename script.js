@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pencilButton = document.getElementById("pencil");
     const eraserButton = document.getElementById("eraser");
     const colorPicker = document.getElementById("colorPicker");
+    const clearButton = document.getElementById("clearCanvas");
 
     // Configurando o tamanho do canvas
     canvas.width = 1280;
@@ -52,5 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     eraserButton.addEventListener("click", function () {
         isErasing = true;
+    });
+
+    // Adicionando evento corrigido para o botão "Apagar Tudo"
+    clearButton.addEventListener("click", function () {
+        // Limpa todo o conteúdo desenhado no canvas
+        context.clearRect(0, 0, canvas.width, canvas.height);
     });
 });
