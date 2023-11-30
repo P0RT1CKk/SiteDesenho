@@ -71,3 +71,12 @@ button:hover {
     z-index: 1; 
 }
 
+.tools button {
+    width: 30px; /* Defina a largura desejada */
+    height: 30px; /* Defina a altura desejada */
+}
+
+.tools img {
+    width: 100%; /* Garante que a imagem preencha o botão */
+    height: 100%;
+}
