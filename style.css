@@ -78,3 +78,21 @@ button:hover {
     transform: translateX(-50%);
     z-index: 1; 
 }
+button#pencil {
+    background: url('<a href="https://www.flaticon.com/br/icones-gratis/vestido-lapis" title="vestido lápis ícones">Vestido lápis ícones criados por Mudassir designs - Flaticon</a>') no-repeat center center;
+    background-size: contain;
+}
+
+button#eraser {
+    background: url('caminho/para/eraser-icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+input#colorPicker {
+    /* Adicione um ícone para o seletor de cores se desejar */
+}
+
+button#clearCanvas {
+    background: url('caminho/para/clear-icon.png') no-repeat center center;
+    background-size: contain;
+}
