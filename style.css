@@ -37,30 +37,23 @@ button, input {
     color: #fff;
     border: none;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-}
-
-
+    button:hover {
+        background-color: #632626;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+    }
+    
 h1 {
     margin-bottom: 20px;
-}
-
-canvas {
-    border: 1px solid #fff;
-    background-color: #fff;
-    margin: 0 auto; /* Centraliza o canvas */
-    display: block;
 }
 
 
@@ -78,9 +71,6 @@ button:hover {
     background-color: #4F4F4F;
 }
 
-
-
-}
 .footer {
     position: fixed;
     bottom: 10px;
