@@ -77,6 +77,6 @@ button:hover {
 }
 
 .tools img {
-    width: 100%; /* Garante que a imagem preencha o botão */
-    height: 100%;
+    width: 10%; /* Garante que a imagem preencha o botão */
+    height: 10%;
 }
