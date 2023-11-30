@@ -88,8 +88,8 @@ button:hover {
   }
   
   .tools button img {
-    width: 20px; /* Ajuste o tamanho conforme necessário */
-    height: 20px;
+    width: 10px; /* Ajuste o tamanho conforme necessário */
+    height: 10px;
     margin-right: 5px; /* Espaço entre a imagem e o texto */
   }
   
