@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const clearButton = document.getElementById("clearCanvas");
 
     // Configurando o tamanho do canvas
-    canvas.width = 1280;
+    canvas.width = 1400;
     canvas.height = 800;
 
     let isDrawing = false;
