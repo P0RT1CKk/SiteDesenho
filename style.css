@@ -21,7 +21,7 @@ h1 {
 canvas {
     border: 1px solid #fff;
     background-color: #fff;
-    margin: 0 auto; /* Centraliza o canvas */
+    margin: 0 auto; 
     display: block;
 }
 
@@ -76,5 +76,5 @@ button:hover {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1; /* Certifica-se de que o texto fica sobre o canvas */
+    z-index: 1; 
 }
