@@ -84,3 +84,6 @@ button:hover {
     margin-right: 5px; /* Espaço entre a imagem e o texto */
   }
   
+  .button
+  {width: 10px;
+min-height: 10px;}
