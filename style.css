@@ -69,20 +69,3 @@ button:hover {
     z-index: 1; 
 }
 
-.tools button {
-    padding: 1px;
-    margin: 1px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .tools button img {
-    width: 10px; /* Ajuste o tamanho conforme necessário */
-    height: 10px;
-    margin-right: 5px; /* Espaço entre a imagem e o texto */
-  }
-  
-  .button
-  {width: 10px;
-min-height: 10px;}
