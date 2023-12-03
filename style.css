@@ -11,7 +11,9 @@ body {
 
 .container {
     text-align: center;
-    height: 100vh;
+    background-color: #000;
+    padding: 20px; /* Adicione algum preenchimento para espaçamento interno */
+    border-radius: 10px; /* Adicione bordas arredondadas se desejar */
 }
 
 h1 {
@@ -19,13 +21,12 @@ h1 {
 }
 
 canvas {
-    border: 1px solid #fff; /* Mantenha a borda existente */
+    border: 1px solid #fff; 
     background-color: #fff;
-    margin: 0 auto; 
     display: block;
-    box-shadow: 0 0 1000px rgba(1281, 801,801, 0.); /* Adicione uma sombra ao redor do canvas */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Melhor sombra para o canvas */
+    margin: 0 auto; 
 }
-
 
 .tools {
     margin-top: 20px;
@@ -35,48 +36,12 @@ button, input {
     padding: 8px 12px;
     margin-right: 10px;
     cursor: pointer;
-    background-color: ;
+    background-color: #333; /* Cor de fundo para os botões */
     color: #fff;
     border: none;
     border-radius: 5px;
-    
-    }
-    
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #000;
-        color: #fff;
-        font-family: 'Arial', sans-serif;
-    }
-    
-h1 {
-    margin-bottom: 20px;
 }
-
-
 
 button:hover {
-    background-color: #4F4F4F;
-}
-
-.footer {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; 
-}
-
-.tools button {
-    width: 3px; /* Defina a largura desejada */
-    height: 3px; /* Defina a altura desejada */
-}
-
-.tools img {
-    width: 10%; /* Garante que a imagem preencha o botão */
-    height: 10%;
+    background-color: #555; /* Cor de fundo ao passar o mouse sobre os botões */
 }
