@@ -43,5 +43,5 @@ button, input {
 }
 
 button:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse sobre os botões */
+    background-color: #000000; /* Cor de fundo ao passar o mouse sobre os botões */
 }
