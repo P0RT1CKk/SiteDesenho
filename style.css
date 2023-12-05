@@ -23,7 +23,7 @@ h1 {
 
 canvas {
     border: 1px solid #fff; 
-    background-color: #fff;
+    background-color: #181616;
     display: block;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Melhor sombra para o canvas */
     margin: 0 auto; 
