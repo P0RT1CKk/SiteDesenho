@@ -73,4 +73,4 @@ document.addEventListener("DOMContentLoaded", function () {
     adjustImageSize("pencil", 30, 30); // Ajuste conforme necessário
     adjustImageSize("eraser", 30, 30); // Ajuste conforme necessário
     adjustImageSize("clearCanvas", 30, 30); // Ajuste conforme necessário
-}); 
+});   
